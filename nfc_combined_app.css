@@ -1,0 +1,107 @@
+/* General body styles */
+body {
+    background-color: #F5F5F5; /* Light gray background for minimalist feel */
+    font-family: 'Arial', sans-serif;
+    color: #2F4F4F; /* Dark sage for text */
+}
+
+/* Center container */
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card styles */
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card h2 {
+    color: #2F4F4F; /* Dark sage title */
+    font-weight: bold;
+}
+
+/* Button styles */
+button {
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+/* Custom button colors */
+.btn-primary {
+    background-color: #4F7942; /* Sage color for balance reading */
+    border-color: #4F7942;
+}
+
+/* Override the active state */
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus,
+.btn-primary:focus:active {
+    background-color: #3A5F34 !important; /* Dark sage for active state */
+    border-color: #3A5F34 !important;
+    box-shadow: none !important; /* Removes Bootstrap's default blue shadow */
+}
+
+/* Override focus state to prevent blue outline */
+.btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-danger {
+    background-color: #B22222; /* Soft red for deduct button */
+    border-color: #B22222;
+}
+
+.btn-success {
+    background-color: #8FBC8F; /* Lighter sage for add points */
+    border-color: #8FBC8F;
+}
+
+/* Input group */
+.input-group .form-control {
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* Info and error alerts */
+.alert-info {
+    background-color: #EAF6F6; /* Soft sage for info */
+    color: #2F4F4F;
+}
+
+.alert-danger {
+    background-color: #FFE4E1; /* Soft pink for errors */
+    color: #B22222;
+}
+
+/* Ensure all text is easy to read and has good contrast */
+h2, p, button {
+    color: #2F4F4F; /* Dark sage for consistency */
+}
+
+#balanceDisplay, #transactionHistory {
+    color: #2c5f2d; /* Sage color */
+    background-color: #f7f7f7; /* Light background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#transactionList {
+    max-height: 200px; /* Limit height if needed */
+    overflow-y: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
