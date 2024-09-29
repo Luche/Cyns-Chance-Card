@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyn's Chance Card</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="nfc_combined_app.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <!-- Card Wrapper -->
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h2 class="text-center mb-4">Cyn's Chance Card</h2>
+
+                        <!-- Read Balance Button -->
+                        <button id="readButton" class="btn btn-primary btn-block mb-3 w-100">Scan Card</button>
+
+                        <!-- Balance Display -->
+                        <div id="balanceDisplay" class="mb-4">
+                            <h5>Balance</h5>
+                            <p id="currentBalance" class="fw-bold"></p>
+                        </div>
+                        
+                        <!-- Transaction History Section -->
+                        <div id="transactionHistory" class="my-3">
+                            <h5>Transaction History</h5>
+                            <ul id="transactionList" class="list-group list-group-flush"></ul>
+                        </div>   
+                        
+                        <!-- Information Message -->
+                        <div class="alert alert-info d-none" id="info" role="alert"></div>
+
+                        <!-- Error Message -->
+                        <div class="alert alert-danger d-none" id="error" role="alert"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer with copyright information -->
+    <footer>
+        &copy; <span id="currentYear"></span> Henry Lucky. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript file -->
+    <script src="nfc_combined_app.js"></script>
+</body>
+</html>
+
+<!-- Deduct 1 Point Button -->
+                        <!-- <button id="deductButton" class="btn btn-danger btn-block mb-3 w-100">Deduct 1 Point</button> -->
+
+                        <!-- Input Field for Custom Points -->
+                        <!-- <div class="input-group mb-3">
+                            <input type="number" class="form-control" id="pointsInput" placeholder="Enter Points">
+                            <button id="addButton" class="btn btn-success">Set Points</button>
+                        </div> -->
